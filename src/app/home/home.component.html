@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <title>Welcome</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="logo"></div>
+        <ul class="menu">
+          <li class="active">
+            <a routerLink="/home">
+              <i class="fa-solid fa-gauge-high"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a routerLink="/register">
+              <i class="fa-regular fa-registered"></i>
+              <span>Register</span>
+            </a>
+          </li>
+          <li>
+            <a routerLink="/home">
+              <i class="fa-solid fa-check"></i>
+              <span>Status</span>
+            </a>
+          </li>
+          <li>
+            <a routerLink="/home">
+              <i class="fa-solid fa-building"></i>
+              <span>Hostal</span>
+            </a>
+          </li>
+          <li>
+            <a routerLink="/home">
+              <i class="fa-solid fa-bus"></i>
+              <span>Transport</span>
+            </a>
+          </li>
+          <li class="logout">
+            <a href="">
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+              <span>Logout</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- main content -->
+      <div class="main--content">
+        <div class="header--wrapper">
+          <div class="header--title">
+            <span>Hi,Welcome</span>
+            <h2>IQAC-Events</h2>
+          </div>
+          <div class="user--info">
+            <div class="search--box">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type=" text" placeholder="Search" />
+            </div>
+          </div>
+        </div>
+        <!-- cards -->
+        <div class="card--cointainer">
+          <h3 class="main--title">Today's Registration</h3>
+          <div class="card--wrapper">
+            <div class="register--card">
+              <div class="card--header">
+                <div class="registration">
+                  <span class="title"> Registrations </span>
+                  <span class="regcount"> 19 </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- tabular wrapper -->
+              <div class="tabular--wrapper">
+				<h2 class="main--title">Registrations</h2>
+				<div class="table--container">
+					<table>
+						<thead>
+						  <tr>
+							<th>Event id</th>
+							<th>Start</th>
+							<th>End</th>
+							<th>Venue</th>
+							<th>Requirements</th>
+							<th>Status</th>
+							<th>Action</th>
+						  </tr>
+						</thead>
+						<tbody>
+						  <!-- Table rows (data rows) will go here -->
+						  <tr>
+							<td>1279</td>
+							<td>2024-04-15</td>
+							<td>2024-04-17</td>
+							<td>SF-2</td>
+							<td>Registerd</td>
+							<td>Confirmed</td>
+							<td><button>Approved</button></td>
+						  </tr>
+						  <tr>
+							<td>1280</td>
+							<td>2024-04-15</td>
+							<td>2024-04-17</td>
+							<td>SF-1</td>
+							<td>Registerd</td>
+							<td>Confirmed</td>
+							<td><button>Rejected</button></td>
+						  </tr>
+
+						  <tr>
+							<td>1269</td>
+							<td>2024-04-15</td>
+							<td>2024-04-17</td>
+							<td>Main Auditoriam</td>
+							<td>Registerd</td>
+							<td>waiting</td>
+							<td><button>Aprroved</button></td>
+						  </tr>
+						  <!-- Add more rows as needed -->
+						</tbody>
+					  </table>
+					  
+				</div>
+			  </div>
+      </div>
+    </div>
+  </body>
+</html>
