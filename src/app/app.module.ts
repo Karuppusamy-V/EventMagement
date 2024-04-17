@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { ErrorComponent } from './error/error.component';
 import { RegisterComponent } from './register/register.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { EventrequirementsComponent } from './eventrequirements/eventrequirements.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     ErrorComponent,
     RegisterComponent,
     SidebarComponent,
+    EventrequirementsComponent,
  
   ],
   imports: [

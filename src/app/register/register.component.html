@@ -4,10 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Requisition Form</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
 </head>
 <body>
+    <!-- sidebar -->
     <div class="container">
-        <app-sidebar></app-sidebar>
+        <div class="sidebar">
+          <div class="logo"></div>
+          <ul class="menu">
+            <li>
+              <a routerLink="/home">
+                <i class="fa-solid fa-gauge-high"></i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li  class="active">
+              <a routerLink="/register">
+                <i class="fa-regular fa-registered"></i>
+                <span>Register</span>
+              </a>
+            </li>
+            <li>
+              <a routerLink="/eventrequirements">
+                <i class="fa-regular fa-registered"></i>
+                <span>Requirements</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa-solid fa-check"></i>
+                <span>Status</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa-solid fa-building"></i>
+                <span>Hostel</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-bus"></i>
+                <span>Transport</span>
+              </a>
+            </li>
+            <li class="logout">
+              <a href="">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <span>Logout</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      
+
+        <!-- registration -->
         <div class="regform">
             <div class="content">
              <h3 id = "title">Event Requsition Form</h3>

@@ -4,6 +4,7 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { EventrequirementsComponent } from './eventrequirements/eventrequirements.component';
 
 
 
@@ -11,8 +12,9 @@ const routes: Routes = [
   // {path : "", component : LoginComponent},
   // {path : "login", component : LoginComponent},
   {path : "home", component : HomeComponent},
-  {path: "", component : RegisterComponent},
+  {path: "", component : EventrequirementsComponent},
   {path: "register" , component : RegisterComponent},
+  {path: "eventrequirements", component : EventrequirementsComponent},
   {path : "sidebar", component : SidebarComponent}
   
 ];

@@ -2,7 +2,7 @@
 *{
     margin:0;
     padding:0;
-    border:none;
+    
     outline:none;
     box-sizing: border-box;
     font-family: "Poppins",sans-serif;
@@ -13,7 +13,7 @@ body{
     background: #ebe9e9;
 }
 .container{
-    // width:100vw; // in home it present 
+    width:100vw; // in home it present 
     display:flex;
 }
 .sidebar{
@@ -21,16 +21,16 @@ body{
    top:0;
    left:0;
    bottom: 0;
-   width:300px;
+   width:360px;
    height:100vh;
    margin-left:10px;
    padding : 0 1.7rem;
    color:#fff;
    overflow: hidden;
    transition: all 0.5s linear;
-//    background-color: rgba(130, 99, 186, 255);
+// background-color: rgba(130, 99, 186, 255);
     background-color: white;
-    border-radius: 1%;
+    border-radius: 10px;
 }
 // .sidebar:hover{
 //     width:300px;
@@ -53,10 +53,6 @@ body{
     border-radius: 8px;
 }
 .menu li:hover, .active{
-    background-color: #0f5dee58;
-    color:#0f5dee58;
-}
-.menu li:hover{
     background-color: #0f5dee58;
     color:#0f5dee58;
 }
@@ -89,4 +85,59 @@ body{
     left:0;
     width:100%;
     
+}
+
+// event requirements
+.req-box{
+    width:100%;
+    height:100vh;
+    background: #fff;
+    margin-left:25px;
+    margin-right:25px;
+    border-radius:10px;
+}
+.title{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding:30px;
+}
+.content{
+    padding:20px;
+    line-height: 40px;
+}
+.yes{
+    padding:10px;
+    width:70px;
+    text-align: center;
+    border-radius: 5px;
+    border:none;
+}
+.no{
+    padding:10px;
+    margin-left: 10px;
+    width:70px;
+    text-align: center;
+    border-radius: 5px;
+    border:none;
+}
+
+.yes:hover{
+    color:white;
+    background-color: rgba(17, 185, 8, 0.941);
+}
+.no:hover{
+    color:white;
+    background-color: rgba(218, 19, 19, 0.941);
+}
+.otherrequire{
+    height:70px;
+    width:190px;
+}
+input{
+    padding: 0 10px;
+    display: flex;
+    border: 1px solid #a09f9f;
+    background-color: #fbfbfbe9;
+    border-radius: 2px;
 }

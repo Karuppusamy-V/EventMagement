@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <title>Welcome</title>
+  </head>
+  <body>
+    <!-- sidebar -->
+    <div class="container">
+      <div class="sidebar">
+        <div class="logo"></div>
+        <ul class="menu">
+          <li>
+            <a routerLink="/home">
+              <i class="fa-solid fa-gauge-high"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="/register">
+              <i class="fa-regular fa-registered"></i>
+              <span>Register</span>
+            </a>
+          </li>
+          <li class="active">
+            <a routerLink="/eventrequirements">
+              <i class="fa-regular fa-registered"></i>
+              <span>Requirements</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fa-solid fa-check"></i>
+              <span>Status</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fa-solid fa-building"></i>
+              <span>Hostel</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-bus"></i>
+              <span>Transport</span>
+            </a>
+          </li>
+          <li class="logout">
+            <a href="">
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+              <span>Logout</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- event requirements  -->
+      <div class="req-box">
+        <div class="content">
+          <h3 class="title">Event Requirements</h3>
+          <table>
+            <form>
+              <tr>
+                <td>
+                  <label>Vehicle Required : </label>
+                </td>
+                <td>
+                  <button class="yes">Yes</button>
+                  <button class="no">No</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label>Accomodation Required : </label>
+                </td>
+                <td>
+                  <button class="yes">Yes</button>
+                  <button class="no">No</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label>Venue Required : </label>
+                </td>
+                <td>
+                  <button class="yes">Yes</button>
+                  <button class="no">No</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label>Audio Required : </label>
+                </td>
+                <td>
+                  <button class="yes">Yes</button>
+                  <button class="no">No</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label>Photography Required : </label>
+                </td>
+                <td>
+                  <button class="yes">Yes</button>
+                  <button class="no">No</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label>Acessories Required : </label>
+                </td>
+                <td>
+                  <button class="yes">Yes</button>
+                  <button class="no">No</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label>Rewars points: </label>
+                </td>
+                <td>
+                  <button class="yes">Yes</button>
+                  <button class="no">No</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label>On-Duty Required : </label>
+                </td>
+                <td>
+                  <button class="yes">Yes</button>
+                  <button class="no">No</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label>If yes Fill the details </label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label>No of Faculty Members :</label>
+                </td>
+                <td>
+                  <input type="number" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label>No of Non-Teaching Staffs :</label>
+                </td>
+                <td>
+                  <input type="number" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label>Other Requirements, if any :</label>
+                </td>
+                <td><textarea type="message" class="otherrequire"></textarea></td>
+              </tr>
+            </form>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
