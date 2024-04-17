@@ -9,6 +9,19 @@
     />
 
     <title>Welcome</title>
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script>
+        // Function called after user signs in using Google
+        function onSignIn(googleUser) {
+            // Get user profile information
+            var profile = googleUser.getBasicProfile();
+            var userName = profile.getName();
+
+            // Display welcome message with user's name
+            document.getElementById('welcomeMessage').textContent = 'Welcome, ' + userName + '!';
+        }
+    </script>
   </head>
   <body>
     <div class="container">
@@ -25,6 +38,12 @@
             <a routerLink="/register">
               <i class="fa-regular fa-registered"></i>
               <span>Register</span>
+            </a>
+          </li>
+          <li>
+            <a routerLink="/register">
+              <i class="fa-regular fa-registered"></i>
+              <span>Event Requirements</span>
             </a>
           </li>
           <li>
@@ -57,7 +76,9 @@
       <div class="main--content">
         <div class="header--wrapper">
           <div class="header--title">
-            <span>Hi,Welcome</span>
+            <span>Welcome</span>
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            <div id="welcomeMessage"></div>
             <h2>IQAC-Events</h2>
           </div>
           <div class="user--info">

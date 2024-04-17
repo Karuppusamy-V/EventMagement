@@ -1,53 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Requisition Form</title>
+</head>
+<body>
     <div class="container">
-      <app-sidebar></app-sidebar>
-      <div class="regform">
-        <div class="content">
-          <h2>Event Requistion Form</h2>
-          <form>
-            <label type="text">Name of the Event : <input type="text" /></label
-            ><br />
-            <label type="text"
-              >Event Date(s)<br />
-              From : <input type="date" /> To : <input type="date" /></label
-            ><br />
-            <label type="text">Number of days : <input type="text" /></label
-            ><br />
-            <label type="text"
-              >Event Time <br />
-              From : <input type="time" /> To : <input type="time" /></label
-            ><br />
-            <label type="text"
-              >Event Organizer Details <br />
-              Name : <input type="text" /><br />
-              Department : <input type="text" /><br />
-              Mobile Number : <input type="text" /> </label
-            ><br />
-            <label type="text"
-              >Number of Participants Expected<br />
-              Internal :<input type="text" /><br>
-               External :<input
-                type="text"
-              /> </label
-            ><br />
-            <label type="text">Guest Details</label><br />
-            <label type="text">No of Guest : <input type="text" /></label><br />
-            <label type="text">Name of the Guest : <input type="text" /></label
-            ><br />
-            <label type="text">Designation : <input type="text" /></label><br />
-            <label type="text"
-              >Name of the Organization / Industry : <input type="text"
-            /></label>
-          </form>
+        <app-sidebar></app-sidebar>
+        <div class="regform">
+            <div class="content">
+             <h3 id = "title">Event Requsition Form</h3>
+            <table class = "tables">
+                <form>
+                    <tr>
+                        <td>
+                            <label for="name">Name of the event: </label>
+                        </td>
+                        <td>
+                            <input type = "text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                          <label for="" class = "subtitle">Event details</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>From :</label>
+                        </td>
+                        <td>
+                            <input type="date">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>To:</label>
+                        </td>
+                        <td>
+                            <input type = "date"> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Number of Days:</label></td>
+                        <td><input type = "number"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Event Time :</label></td>
+                    </tr>
+                    <tr>
+                        <td><label>From:</label></td>
+                        <td><input type = "time"></td>
+                    </tr>
+                    <tr>
+                        <td><label>To:</label></td>
+                        <td><input type = "time"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><label class = "subtitle">Event Organizer Details</label></td>
+                    </tr>
+                    <tr>
+                        <td><label>Name :</label></td>
+                        <td><input type = "text"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Department :</label></td>
+                        <td><input type = "text"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Mobile :</label></td>
+                        <td><input type = "text"></td>
+                    </tr>
+                    <tr>
+                        <td><label>No of Participants</label></td>
+                    </tr>
+                    <tr>
+                        <td><label>Internal :</label></td>
+                        <td><input type = "number"></td>
+                    </tr>
+                    <tr>
+                        <td><label>External :</label></td>
+                        <td><input type = "number"></td>
+                    </tr>
+                    <tr >
+                        <td><label class = "subtitle">Guest details</label></td>
+                    </tr>
+                    <tr>
+                        <td><label>Number of Guest</label></td>
+                        <td><input type = "number"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Name of the Guest</label></td>
+                        <td><input type = "text" placeholder="Mr./Ms./Dr./Prof./"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Designation</label></td>
+                        <td><input type = "text"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Name of the<br> Organization/Industry</label></td>
+                        <td><input type = "text"></td>
+                    </tr>
+                </form>
+            </table>
+            <div class="submit">
+                <button>Submit</button>
+            </div>
+            </div>
+                
         </div>
-      </div>
     </div>
-  </body>
+</body>
 </html>

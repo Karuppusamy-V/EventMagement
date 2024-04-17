@@ -8,10 +8,10 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 const routes: Routes = [
-  {path : "", component : LoginComponent},
-  {path : "login", component : LoginComponent},
+  // {path : "", component : LoginComponent},
+  // {path : "login", component : LoginComponent},
   {path : "home", component : HomeComponent},
-  // {path: "", component : RegisterComponent},
+  {path: "", component : RegisterComponent},
   {path: "register" , component : RegisterComponent},
   {path : "sidebar", component : SidebarComponent}
   

@@ -21,7 +21,7 @@ body{
    top:0;
    left:0;
    bottom: 0;
-   width:115px;
+   width:300px;
    height:100vh;
    margin-left:10px;
    padding : 0 1.7rem;
@@ -32,10 +32,10 @@ body{
     background-color: white;
     border-radius: 1%;
 }
-.sidebar:hover{
-    width:300px;
-    transition: 0.5s;
-}
+// .sidebar:hover{
+//     width:300px;
+//     transition: 0.5s;
+// }
 .logo{
     height:80px;
     padding:16px;
