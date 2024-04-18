@@ -31,8 +31,14 @@
           <li class="active">
             <a routerLink="/eventrequirements">
               <i class="fa-regular fa-registered"></i>
-              <span>Requirements</span>
+              <span >Requirements</span>
+              <i class = "fas fa-angle-right dropdown"></i>
             </a>
+            <div class="sub-menu">
+              <a href="" class="sub-item">Venue</a>
+              <a href="" class="sub-item">Hostal</a>
+              <a href="" class="sub-item">Physical</a>
+            </div>
           </li>
           <li>
             <a href="">
@@ -171,5 +177,18 @@
         </div>
       </div>
     </div>
+
+    <!-- jquery for the  toggle submenu-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Use a more specific selector for the click event
+      $('.menu > li.active > a').click(function(e) {
+        e.preventDefault(); // Prevent default link behavior
+        $(this).next('.sub-menu').slideToggle(); // Toggle visibility of submenu
+        $(this).find('.dropdown').toggleClass('rotate'); // Toggle class for dropdown icon
+      });
+    });
+  </script>
   </body>
 </html>
